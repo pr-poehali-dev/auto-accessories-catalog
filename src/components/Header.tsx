@@ -23,7 +23,7 @@ const Header = () => {
             </div>
             <div>
               <h1 className="font-montserrat font-bold text-xl text-auto-dark">
-                АвтоСтиль
+                ль
               </h1>
               <p className="text-xs text-muted-foreground">
                 Аксессуары для авто
