@@ -15,6 +15,10 @@ const Hero = () => {
 
       <div className="relative z-10 container mx-auto px-4 text-center text-white">
         <div className="max-w-4xl mx-auto animate-fade-in">
+          {/* Бренд */}
+          <div className="text-2xl md:text-3xl font-montserrat font-bold mb-4 text-auto-orange">
+            Seven SHOP
+          </div>
           {/* Основной заголовок */}
           <h1 className="text-5xl md:text-7xl font-montserrat font-bold mb-6 leading-tight">
             Премиум аксессуары
@@ -40,6 +44,9 @@ const Hero = () => {
               size="lg"
               variant="outline"
               className="border-white text-white hover:bg-white hover:text-auto-blue font-semibold px-8 py-4 text-lg"
+              onClick={() =>
+                window.open("https://wa.me/996773219806", "_blank")
+              }
             >
               <Icon name="MessageCircle" size={20} className="mr-3" />
               Заказать в WhatsApp

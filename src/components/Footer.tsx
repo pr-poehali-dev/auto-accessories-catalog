@@ -12,14 +12,19 @@ const Footer = () => {
                 <Icon name="Car" className="text-white" size={24} />
               </div>
               <div>
-                <h3 className="font-montserrat font-bold text-xl">АвтоСтиль</h3>
+                <h3 className="font-montserrat font-bold text-xl">
+                  Seven SHOP
+                </h3>
                 <p className="text-sm opacity-70">Аксессуары для авто</p>
               </div>
             </div>
-            <p className="text-white/80 mb-6 max-w-md">
+            <p className="text-white/80 mb-4 max-w-md">
               Качественные автоаксессуары с доставкой по всей России. Защитите и
               украсьте свой автомобиль с нашими товарами.
             </p>
+            <div className="mb-6">
+              <p className="text-white/80 mb-2">WhatsApp: +996773219806</p>
+            </div>
             <div className="flex space-x-4">
               <div className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-auto-blue transition-colors cursor-pointer">
                 <Icon name="MessageCircle" size={20} />
@@ -139,7 +144,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-white/10 mt-8 pt-8 text-center text-white/60">
-          <p>&copy; 2024 АвтоСтиль. Все права защищены.</p>
+          <p>&copy; 2024 Seven SHOP. Все права защищены.</p>
         </div>
       </div>
     </footer>
