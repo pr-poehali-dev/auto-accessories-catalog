@@ -9,8 +9,7 @@ const ProductCategories = () => {
       name: "Авточехлы",
       description: "Защитные чехлы для сидений из экокожи и ткани",
       icon: "Armchair",
-      image:
-        "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=400&h=300&fit=crop&crop=center",
+      image: "/images/categories/car-covers.jpg",
       color: "from-blue-500 to-purple-600",
     },
     {
@@ -18,8 +17,7 @@ const ProductCategories = () => {
       name: "Авто тенты",
       description: "Надежная защита от солнца и непогоды",
       icon: "Tent",
-      image:
-        "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop&crop=center",
+      image: "/images/categories/car-tents.jpg",
       color: "from-green-500 to-teal-600",
     },
     {
@@ -27,8 +25,7 @@ const ProductCategories = () => {
       name: "Авто зонтики",
       description: "Компактные зонты для защиты от дождя",
       icon: "Umbrella",
-      image:
-        "https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?w=400&h=300&fit=crop&crop=center",
+      image: "/images/categories/car-umbrellas.jpg",
       color: "from-orange-500 to-red-600",
     },
     {
@@ -36,8 +33,7 @@ const ProductCategories = () => {
       name: "Авто холодильники",
       description: "Портативные холодильники для путешествий",
       icon: "Refrigerator",
-      image:
-        "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop&crop=center",
+      image: "/images/categories/car-fridges.jpg",
       color: "from-cyan-500 to-blue-600",
     },
     {
@@ -45,8 +41,7 @@ const ProductCategories = () => {
       name: "Авто кондиционеры",
       description: "Мобильные кондиционеры для комфорта",
       icon: "Wind",
-      image:
-        "https://images.unsplash.com/photo-1607400201889-565b1ee75f8e?w=400&h=300&fit=crop&crop=center",
+      image: "/images/categories/car-conditioners.jpg",
       color: "from-indigo-500 to-purple-600",
     },
     {
@@ -54,8 +49,7 @@ const ProductCategories = () => {
       name: "Evo коврики",
       description: "Премиум коврики для салона автомобиля",
       icon: "SquareStack",
-      image:
-        "https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=400&h=300&fit=crop&crop=center",
+      image: "/images/categories/evo-mats.jpg",
       color: "from-pink-500 to-rose-600",
     },
   ];
