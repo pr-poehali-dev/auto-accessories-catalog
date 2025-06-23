@@ -1,8 +1,25 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Icon from "@/components/ui/icon";
+import ProductModal from "@/components/ProductModal";
+import { useState } from "react";
 
 const ProductCategories = () => {
+  const [selectedCategory, setSelectedCategory] = useState<{
+    id: number;
+    name: string;
+    description: string;
+  } | null>(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleViewProducts = (category: {
+    id: number;
+    name: string;
+    description: string;
+  }) => {
+    setSelectedCategory(category);
+    setIsModalOpen(true);
+  };
   const categories = [
     {
       id: 1,
@@ -112,11 +129,13 @@ const ProductCategories = () => {
                 </p>
                 <Button
                   className="w-full bg-auto-blue hover:bg-auto-blue/90 text-white group-hover:bg-auto-orange transition-colors duration-300"
-                  onClick={() => {
-                    const message = `Здравствуйте! Интересуют товары из категории "${category.name}" - ${category.description}`;
-                    const whatsappUrl = `https://wa.me/77777777777?text=${encodeURIComponent(message)}`;
-                    window.open(whatsappUrl, "_blank");
-                  }}
+                  onClick={() =>
+                    handleViewProducts({
+                      id: category.id,
+                      name: category.name,
+                      description: category.description,
+                    })
+                  }
                 >
                   <Icon name="ShoppingCart" size={18} className="mr-2" />
                   Смотреть товары
@@ -143,6 +162,12 @@ const ProductCategories = () => {
           </Button>
         </div>
       </div>
+
+      <ProductModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        category={selectedCategory}
+      />
     </section>
   );
 };
