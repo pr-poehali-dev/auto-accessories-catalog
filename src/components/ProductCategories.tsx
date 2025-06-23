@@ -110,7 +110,14 @@ const ProductCategories = () => {
                 <p className="text-muted-foreground mb-4 leading-relaxed">
                   {category.description}
                 </p>
-                <Button className="w-full bg-auto-blue hover:bg-auto-blue/90 text-white group-hover:bg-auto-orange transition-colors duration-300">
+                <Button
+                  className="w-full bg-auto-blue hover:bg-auto-blue/90 text-white group-hover:bg-auto-orange transition-colors duration-300"
+                  onClick={() => {
+                    const message = `Здравствуйте! Интересуют товары из категории "${category.name}" - ${category.description}`;
+                    const whatsappUrl = `https://wa.me/77777777777?text=${encodeURIComponent(message)}`;
+                    window.open(whatsappUrl, "_blank");
+                  }}
+                >
                   <Icon name="ShoppingCart" size={18} className="mr-2" />
                   Смотреть товары
                 </Button>
@@ -124,6 +131,12 @@ const ProductCategories = () => {
           <Button
             size="lg"
             className="bg-auto-orange hover:bg-auto-orange/90 text-white px-8 py-4 text-lg"
+            onClick={() => {
+              const message =
+                "Здравствуйте! Хочу посмотреть весь каталог ваших товаров";
+              const whatsappUrl = `https://wa.me/77777777777?text=${encodeURIComponent(message)}`;
+              window.open(whatsappUrl, "_blank");
+            }}
           >
             <Icon name="Grid3x3" size={20} className="mr-3" />
             Посмотреть весь каталог
